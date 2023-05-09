@@ -1,0 +1,38 @@
+package erp.workorder.dao;
+
+import java.util.List;
+
+import erp.workorder.entity.WorkorderConsultantWork;
+import erp.workorder.entity.WorkorderConsultantWorkItemMapping;
+import erp.workorder.entity.WorkorderConsultantWorkItemMappingVersion;
+import erp.workorder.entity.WorkorderConsultantWorkVersion;
+
+public interface WorkorderConsultantWorkDao {
+
+	Long saveWorkorderConsultantWork(WorkorderConsultantWork consultantWork);
+
+	Long saveWorkorderConsultantWorkItemMap(WorkorderConsultantWorkItemMapping workItem);
+
+	WorkorderConsultantWork fetchWorkorderConsultantWorkById(Long consultantWorkId);
+
+	Boolean updateWorkorderConsultantWork(WorkorderConsultantWork consultantWork);
+
+	List<WorkorderConsultantWorkItemMapping> fetchWorkorderConsultantWorkItemsByConsultantWorkId(Long id);
+
+	WorkorderConsultantWorkItemMapping fetchWorkorderConsultantWorkItemMappingById(Long consultantWorkItemId);
+
+	Boolean updateWorkorderConsultantWorkItem(WorkorderConsultantWorkItemMapping consultantWorkItem);
+
+	void forceUpdateWorkorderConsultantWorkItem(WorkorderConsultantWorkItemMapping consultantWorkItem);
+
+	List<WorkorderConsultantWorkItemMapping> fetchWorkorderConsultantWorkItemsBySiteId(Long siteId);
+
+	Object fetchWorkorderConsultantWorkItemCategoryDescriptions(Integer companyId);
+
+	WorkorderConsultantWork fetchWorkorderConsultantWorkByWorkorderId(Long workorderId);
+
+	Long saveWorkorderConsultantWorkVersion(WorkorderConsultantWorkVersion consultantWorkVersion);
+
+	Long saveWorkorderConsultantWorkItemMapVersion(WorkorderConsultantWorkItemMappingVersion itemVersionObj);
+
+}

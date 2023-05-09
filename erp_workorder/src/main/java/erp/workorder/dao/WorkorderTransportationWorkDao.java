@@ -1,0 +1,35 @@
+package erp.workorder.dao;
+
+import java.util.List;
+
+import erp.workorder.entity.WorkorderTransportWork;
+import erp.workorder.entity.WorkorderTransportWorkItemMapping;
+import erp.workorder.entity.WorkorderTransportWorkItemMappingVersion;
+import erp.workorder.entity.WorkorderTransportWorkVersion;
+
+public interface WorkorderTransportationWorkDao {
+
+	Long saveWorkorderTransportWork(WorkorderTransportWork transportWork);
+
+	Long saveWorkorderTransportWorkItemMap(WorkorderTransportWorkItemMapping workItem);
+
+	WorkorderTransportWork fetchWorkorderTransportWorkById(Long transportWorkId);
+
+	Boolean updateWorkorderTransportWork(WorkorderTransportWork transportWork);
+
+	List<WorkorderTransportWorkItemMapping> fetchWorkorderTransportWorkItemsByTransportWorkId(Long transportWorkId);
+
+	WorkorderTransportWorkItemMapping fetchWorkorderTransportWorkItemMappingById(Long transportWorkItemId);
+
+	Boolean updateWorkorderTransportWorkItem(WorkorderTransportWorkItemMapping transportWorkItem);
+
+	void forceUpdateWorkorderTransportWorkItem(WorkorderTransportWorkItemMapping transportWorkItem);
+
+	List<WorkorderTransportWorkItemMapping> fetchWorkorderTransportWorkItemsBySiteId(Long siteId);
+
+	WorkorderTransportWork fetchWorkorderTransportWorkByWorkorderId(Long workorderId);
+
+	Long saveWorkorderTransportWorkVersion(WorkorderTransportWorkVersion transportWorkVersion);
+
+	Long saveWorkorderTransportWorkItemMapVersion(WorkorderTransportWorkItemMappingVersion itemVersionObj);
+}

@@ -1,0 +1,212 @@
+package erp.workorder.dto;
+
+import java.util.Date;
+
+import erp.workorder.entity.BoqItem;
+
+public class HighwayBoqMappingDTO {
+
+	private Long id;
+
+	private BoqItem boq;
+
+	private String description;
+
+	private CategoryItemDTO category;
+
+	private SubcategoryItemDTO subcategory;
+
+	private Double quantity;
+
+	private Double rate;
+
+	private Double maxRate;
+
+	private String remark;
+
+	private Long siteId;
+
+	private FileDTO file;
+
+	private Integer version;
+
+	private Integer quantityVersion;
+
+	private Boolean isActive;
+
+	private Date modifiedOn;
+
+	private Long modifiedBy;
+
+	private Integer companyId;
+
+	public HighwayBoqMappingDTO() {
+		super();
+	}
+
+	public HighwayBoqMappingDTO(Long id) {
+		super();
+		this.id = id;
+	}
+
+	public HighwayBoqMappingDTO(Long id, BoqItem boq, String description, CategoryItemDTO category,
+			SubcategoryItemDTO subcategory, Double quantity, Double rate, Double maxRate, String remark, Long siteId,
+			FileDTO file, Integer version, Integer quantityVersion, Boolean isActive, Date modifiedOn, Long modifiedBy,
+			Integer companyId) {
+		super();
+		this.id = id;
+		this.boq = boq;
+		this.description = description;
+		this.category = category;
+		this.subcategory = subcategory;
+		this.quantity = quantity;
+		this.rate = rate;
+		this.maxRate = maxRate;
+		this.remark = remark;
+		this.siteId = siteId;
+		this.file = file;
+		this.version = version;
+		this.quantityVersion = quantityVersion;
+		this.isActive = isActive;
+		this.modifiedOn = modifiedOn;
+		this.modifiedBy = modifiedBy;
+		this.companyId = companyId;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public BoqItem getBoq() {
+		return boq;
+	}
+
+	public void setBoq(BoqItem boq) {
+		this.boq = boq;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public CategoryItemDTO getCategory() {
+		return category;
+	}
+
+	public void setCategory(CategoryItemDTO category) {
+		this.category = category;
+	}
+
+	public SubcategoryItemDTO getSubcategory() {
+		return subcategory;
+	}
+
+	public void setSubcategory(SubcategoryItemDTO subcategory) {
+		this.subcategory = subcategory;
+	}
+
+	public Double getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(Double quantity) {
+		this.quantity = quantity;
+	}
+
+	public Double getRate() {
+		return rate;
+	}
+
+	public void setRate(Double rate) {
+		this.rate = rate;
+	}
+
+	public Double getMaxRate() {
+		return maxRate;
+	}
+
+	public void setMaxRate(Double maxRate) {
+		this.maxRate = maxRate;
+	}
+
+	public String getRemark() {
+		return remark;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+
+	public Long getSiteId() {
+		return siteId;
+	}
+
+	public void setSiteId(Long siteId) {
+		this.siteId = siteId;
+	}
+
+	public FileDTO getFile() {
+		return file;
+	}
+
+	public void setFile(FileDTO file) {
+		this.file = file;
+	}
+
+	public Integer getVersion() {
+		return version;
+	}
+
+	public void setVersion(Integer version) {
+		this.version = version;
+	}
+
+	public Integer getQuantityVersion() {
+		return quantityVersion;
+	}
+
+	public void setQuantityVersion(Integer quantityVersion) {
+		this.quantityVersion = quantityVersion;
+	}
+
+	public Boolean getIsActive() {
+		return isActive;
+	}
+
+	public void setIsActive(Boolean isActive) {
+		this.isActive = isActive;
+	}
+
+	public Date getModifiedOn() {
+		return modifiedOn;
+	}
+
+	public void setModifiedOn(Date modifiedOn) {
+		this.modifiedOn = modifiedOn;
+	}
+
+	public Long getModifiedBy() {
+		return modifiedBy;
+	}
+
+	public void setModifiedBy(Long modifiedBy) {
+		this.modifiedBy = modifiedBy;
+	}
+
+	public Integer getCompanyId() {
+		return companyId;
+	}
+
+	public void setCompanyId(Integer companyId) {
+		this.companyId = companyId;
+	}
+
+}

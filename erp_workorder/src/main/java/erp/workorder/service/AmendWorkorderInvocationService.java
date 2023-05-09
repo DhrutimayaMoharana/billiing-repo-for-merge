@@ -1,0 +1,22 @@
+package erp.workorder.service;
+
+import erp.workorder.dto.CustomResponse;
+import erp.workorder.dto.request.AmendWorkorderInvocationAddUpdateRequest;
+import erp.workorder.dto.request.AmendWorkorderInvocationDeactivateRequest;
+import erp.workorder.dto.request.AmendWorkorderInvocationGetRequest;
+import erp.workorder.dto.request.AmendWorkorderInvocationNextActionsRequest;
+import erp.workorder.dto.request.AmendWorkorderInvocationUpdateStateRequest;
+
+public interface AmendWorkorderInvocationService {
+
+	CustomResponse getWorkorderAmendmentInvocation(AmendWorkorderInvocationGetRequest clientRequestDTO);
+
+	CustomResponse addOrUpdateWorkorderAmendmentInvocation(AmendWorkorderInvocationAddUpdateRequest clientRequestDTO);
+
+	CustomResponse deactivateWorkorderAmendmentInvocation(AmendWorkorderInvocationDeactivateRequest clientRequestDTO);
+
+	CustomResponse updateWorkorderAmendmentInvocationState(AmendWorkorderInvocationUpdateStateRequest clientRequestDTO);
+
+	CustomResponse getNextPossibleStates(AmendWorkorderInvocationNextActionsRequest clientRequestDTO);
+
+}
